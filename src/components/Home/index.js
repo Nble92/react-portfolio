@@ -1,4 +1,4 @@
-import LogoTitle from '../../assets/images/NArts.png'
+import LogoTitle from '../../assets/images/NobleLogo.png'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
@@ -9,7 +9,7 @@ import {Loader} from 'react-loaders'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['N', 'O', 'B', 'L', 'E']
+    // const nameArray = ['N', 'B', 'L', 'E']
     const jobArray = ['D','e','v','e','l','o','p','e','r']
 
     useEffect(() => {
@@ -30,19 +30,25 @@ const Home = () => {
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i, </span>
+                    <span className={`${letterClass} _12`}>i </span>
+                    <span className={`${letterClass} _12`}>, </span>
+
                     <br/>
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m </span>
-                <img src={LogoTitle} alt="developer" />
-                <AnimatedLetters letterClass={letterClass}
+                <img class='nbleLogo' src={LogoTitle} alt="developer" />
+                {/* <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
-                idx={15} />
+                idx={15} /> */}
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                idx={15} />                </h1>
-                <h2> Frontend developer / Cyber Security Engineer / Content Creator</h2>
+                            idx={15} />
+                        <br />
+                    </h1>
+                    <h2>
+                        <br />
+                        Frontend developer / Cyber Security Engineer / Content Creator</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Logo/>
