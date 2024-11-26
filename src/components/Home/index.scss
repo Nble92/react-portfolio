@@ -8,10 +8,19 @@
         width: 40%;
         max-height: 90%;
     }
-
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Start from outside the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
     h1 {
         color: #fff;
-        font-size: 53px;
+        font-size: 33px;
         font-family: 'futurist fixed-width';
         font-weight: 400;
         margin-bottom: 20px;
@@ -19,6 +28,7 @@
         .nbleLogo {
 
             vertical-align: middle;
+            margin-left: 100px;
             height: 100%;
             width: 39%;
 
@@ -56,8 +66,9 @@
             margin-left: 20px;
             opacity: 0;
             height: auto;
-            animation: rotateIn 1s linear both;
+            animation: fadeInFromRight 1s 1s;
             animation-delay: 1.4s;           
+            animation-fill-mode: forwards;
 
         }
     

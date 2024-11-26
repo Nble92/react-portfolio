@@ -10,7 +10,7 @@ import {Loader} from 'react-loaders'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     // const nameArray = ['N', 'B', 'L', 'E']
-    const jobArray = ['D','e','v','e','l','o','p','e','r']
+    // const jobArray = ['D',''e,'v','e','l','o','p','e','r']
 
     useEffect(() => {
     const timerId = setTimeout(() => {
@@ -29,26 +29,26 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i </span>
-                    <span className={`${letterClass} _12`}>, </span>
-
+                    <span className={letterClass}>J</span>
+                    <span className={`${letterClass} _12`}>O </span>
+                    <span className={`${letterClass} _12`}>H </span>
+                    <span className={`${letterClass} _12`}>N </span>
                     <br/>
-                    <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m </span>
+                    {/* <span className={`${letterClass} _13`}>I</span>
+                    <span className={`${letterClass} _14`}>'m </span> */}
                 <img class='nbleLogo' src={LogoTitle} alt="developer" />
                 {/* <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
                 idx={15} /> */}
                 <br />
-                <AnimatedLetters letterClass={letterClass}
+                {/* <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                            idx={15} />
+                            idx={15} /> */}
                         <br />
                     </h1>
                     <h2>
                         <br />
-                        Frontend developer / Cyber Security Engineer / Content Creator</h2>
+                        Full-Stack developer / Cyber Security Engineer / Content Creator</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Logo/>

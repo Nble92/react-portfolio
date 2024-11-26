@@ -1,7 +1,22 @@
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Start from outside the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
+
+.element {
+  animation: fadeInFromRight 1s ease-out forwards;
+}
+
 .text-animate {
     display: inline-block;
     opacity: 0;
-    animation: bounceIn 1s 1s;
+    animation: fadeInFromRight 1s 1s;
     animation-fill-mode: forwards;
     min-width: 10px;
 }
