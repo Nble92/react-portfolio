@@ -48,7 +48,8 @@ const Home = () => {
                     </h1>
                     <h2>
                         <br />
-                        Full-Stack developer / Cyber Security Engineer / Content Creator</h2>
+                        Full-Stack developer / CompTIA CYSA+ / Cloud Practitioner
+                    </h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Logo/>
