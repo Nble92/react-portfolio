@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './index.scss';
 import LogoS from '../../../assets/images/logo-s.png';
-import DrawSVGPlugin from 'gsap/DrawSVGPlugin';
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 import gsap from 'gsap';
 
 const Logo = () => {
@@ -16,7 +16,6 @@ const Logo = () => {
     const circle1Ref = useRef();
     const circle2Ref = useRef();
     
-    gsap.config({trialWarn: false});
     useEffect(() => {
         
 
