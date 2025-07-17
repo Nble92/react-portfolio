@@ -18,6 +18,18 @@ $primary-color: #ffd700;
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
+@font-face{
+  font-family: 'futurist fixed-width';
+  src: url('./assets/fonts/FUTRFW.woff') format('woff');
+}
+
+@font-face{
+  font-family: '8-Bit HUD';
+  src: url('./assets/fonts/8-bit-hud.woff') format('woff');
+}
+
+
+
 input,
 textarea{
   font-family: 'Helvetica Neue', sans-serif;
